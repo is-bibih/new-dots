@@ -1,0 +1,66 @@
+// set icons
+
+configuration {
+    display-combi: "";
+    display-drun: "異";
+    display-run: "";
+    display-window: "缾";
+    display-ssh: "";
+    display-filebrowser: "";
+    show-icons: true;
+    //sidebar-mode: true;
+}
+
+// ******** global properties *********
+
+* {
+  background-color: rgba(30, 28, 49, 0.4);
+  text-color: #cbe3e7;
+  spacing: 0;
+  border: 0;
+  width: 512px;
+}
+
+inputbar {
+  children: [prompt,entry];
+}
+
+prompt {
+  margin: 10px;
+  font: "M+ 1mn 12";
+}
+
+textbox {
+  padding: 8px 16px;
+}
+
+entry {
+  padding: 10px;
+}
+
+listview {
+  cycle: false;
+  margin: 0 0 -1px 0;
+  scrollbar: false;
+  lines: 5;
+}
+
+element {
+  children: [element-icon, element-text];
+  padding: 10px;
+}
+
+element selected {
+  background-color: rgba(76, 46, 107, 0.5);
+}
+
+element-text {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+element-icon {
+  size: 1em;
+  margin: 0 10px 0 0;
+}
+
+/* vim:ft=css

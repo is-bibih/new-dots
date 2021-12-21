@@ -1,0 +1,10 @@
+configuration {
+	modi: "filebrowser,window,drun";
+	show-icons: true;
+	icon-theme: "Papirus-Dark";
+	font: "M+ 1mn 11";
+	//hide-scrollbar: true;
+	//lines: 5;
+}
+
+@theme "cute-theme"

@@ -1,0 +1,67 @@
+! ******************
+! urxvt config
+! ******************
+
+! **** declare extensions ****
+urxvt.perl-ext-common: default,selection-to-clipboard,matcher,tabbedex
+
+! **** keybindings for copy-paste ****
+urxvt.keysym.Shift-Control-V: eval:paste_clipboard
+urxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+! **** clickable urls ****
+urxvt.url-launcher:   /usr/bin/xdg-open
+urxvt.matcher.button: 1
+
+! **** remove the weird yellow box on shift-ctrl ****
+urxvt.iso14755: false
+
+! **** transparency ****
+urxvt*depth:        32
+urxvt*background:   [90]#291a2b
+!urxvt*background:   #291a2b
+
+! **** colorscheme ****
+! special
+*.foreground:   #cbe3e7
+*.cursorColor:  #cbe3e7
+! black
+*.color0:       #3b2e3d
+*.color8:       #544156
+! red
+*.color1:       #f94144
+*.color9:       #fd9a9c
+! green
+*.color2:       #44af69
+*.color10:      #68d88f
+! yellow
+*.color3:       #f9c74f
+*.color11:      #fde1a0
+! blue
+*.color4:       #577590
+*.color12:      #90b7d9
+! magenta
+*.color5:       #fd5ed5
+*.color13:      #ffa9e9
+! cyan
+*.color6:       #37d3b1
+*.color14:      #72ead0
+! white
+*.color7:       #d0c5db
+*.color15:      #e8def2
+
+! **** font ****
+urxvt.font:	xft:M+ 1mn:pixelsize=14
+
+! **** input with ibus ****
+urxvt.inputMethod:  ibus
+urxvt.preeditType:  OverTheSpot
+
+! **** delet scrollbar and make it prettier ****
+urxvt*scrollBar:                  false
+urxvt*mouseWheelScrollPage:       false
+urxvt*cursorBlink:                true
+urxvt*saveLines:                  5000
+urxvt*internalBorder:             10 
+urxvt*geometry:                   70x19
+
