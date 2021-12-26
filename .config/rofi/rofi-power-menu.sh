@@ -9,7 +9,7 @@ then
 elif [ x"$@" = x"suspend" ]
 then
   systemctl suspend
-elif [ x"$@" = x"log off" ]
+elif [ x"$@" = x"log out" ]
 then
   bspc quit
 elif [ x"$@" = x"lock" ]
@@ -18,9 +18,9 @@ then
   exit 0
 fi
 
-echo "lock"
-echo "power off"
-echo "reboot"
-echo "suspend"
-echo "log off"
+echo -e "lock\0icon\x1fsystem-lock-screen"
+echo -e "power off\0icon\x1fsystem-shutdown"
+echo -e "reboot\0icon\x1fsystem-reboot"
+echo -e "suspend\0icon\x1fprocess-stop"
+echo -e "log out\0icon\x1fsystem-log-out"
 
