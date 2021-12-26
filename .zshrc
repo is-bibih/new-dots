@@ -28,7 +28,7 @@ precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
 RPROMPT=\$vcs_info_msg_0_
-zstyle ':vcs_info:git:*' formats '%F{#b1a1ff}%b ▶ %r%f'
+zstyle ':vcs_info:git:*' formats '%F{#b1a1ff}%b  %r%f'
 zstyle ':vcs_info:*' enable git
 
 # vim instead of vi
@@ -60,10 +60,10 @@ alias latexclean='rm -r ./*.nav ./*.snm ./*.synctex.gz ./*_minted*'
 export TEXINPUTS=:$HOME/.latex-packages//
 
 # grive id and secret
-. ~/.grivealias
+#. ~/.grivealias
 
 # load nnn config
-. ~/.config/nnn/.nnnconfig
+#. ~/.config/nnn/.nnnconfig
 
 # add local binaries to path
 export PATH=/home/vivi/.local/bin:$PATH
