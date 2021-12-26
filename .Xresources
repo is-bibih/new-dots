@@ -51,7 +51,7 @@ urxvt*background:   [90]#291a2b
 *.color15:      #e8def2
 
 ! **** font ****
-urxvt.font:	xft:M+ 1mn:pixelsize=14
+urxvt.font:	xft:M+ 1mn:pixelsize=14,xft:Noto Sans Mono:pixelsize=14
 
 ! **** input with ibus ****
 urxvt.inputMethod:  ibus
