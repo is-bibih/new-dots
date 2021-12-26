@@ -11,12 +11,18 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
+# -- other stuff --
+
 # no rounded corners on monocle
-sh ~/scripts/no-rounded-monocle.sh
+sh ~/scripts/no-rounded-monocle.sh &
+# no beep
+xset -b
 
 # -- autostart --
 
-sh ~/.config/picom/launch.sh
-sh ~/.config/polybar/launch.sh
-sh ~/scripts/bg-lock.sh
+sh ~/.config/picom/launch.sh &
+sh ~/.config/polybar/launch.sh &
+sh ~/scripts/bg-lock.sh &
+fcitx -d &
+wired -r &
 

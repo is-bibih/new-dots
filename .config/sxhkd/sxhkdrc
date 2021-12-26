@@ -14,6 +14,10 @@ super + @space
 super + Escape
 	pkill -USR1 -x sxhkd
 
+# power menu
+super + p
+	rofi -show power -modi "power:~/.config/rofi/rofi-power-menu.sh"
+
 # screenshot
 Print
 	maim -u | xclip -selection clipboard -t image/png
