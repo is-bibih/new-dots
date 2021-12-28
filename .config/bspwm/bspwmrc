@@ -16,12 +16,13 @@ bspc config gapless_monocle      true
 # no rounded corners on monocle
 sh ~/scripts/no-rounded-monocle.sh &
 # no beep
-xset -b
+xset -b &
 
 # -- autostart --
 
 sh ~/.config/picom/launch.sh &
 sh ~/.config/polybar/launch.sh &
+sh ~/.config/mopidy/launch.sh &
 sh ~/scripts/bg-lock.sh &
 fcitx -d &
 wired -r &
