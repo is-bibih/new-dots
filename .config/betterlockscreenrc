@@ -1,0 +1,10 @@
+# ~/.config/betterlockscreenrc
+
+# default options
+fx_list=(blur)
+
+# default theme
+loginbox=291a2b66
+locktext="type password to unlock"
+font="M+ 1mn"
+time_format="%H:%M"
