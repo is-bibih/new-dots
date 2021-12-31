@@ -63,7 +63,8 @@ export TEXINPUTS=:$HOME/.latex-packages//
 #. ~/.grivealias
 
 # load nnn config
-#. ~/.config/nnn/.nnnconfig
+. ~/.config/nnn/config.sh
+. ~/.config/nnn/quit-cd.sh
 
 # add local binaries to path
 export PATH=/home/vivi/.local/bin:$PATH
