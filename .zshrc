@@ -59,8 +59,8 @@ alias latexclean='rm -r ./*.nav ./*.snm ./*.synctex.gz ./*_minted*'
 # add folder for custom classes/packages
 export TEXINPUTS=:$HOME/.latex-packages//
 
-# grive id and secret
-#. ~/.grivealias
+# todo.txt alias
+alias todo='todo.sh -c'
 
 # load nnn config
 . ~/.config/nnn/config.sh
@@ -69,6 +69,8 @@ export TEXINPUTS=:$HOME/.latex-packages//
 # add local binaries to path
 export PATH=/home/vivi/.local/bin:$PATH
 export PATH=/home/vivi/.cargo/bin:$PATH
+# matlab to path
+export PATH=/home/vivi/MATLAB-install/R2021b/bin:$PATH
 
 # set pyenv root
 export PYENV_ROOT="$HOME/.pyenv"
