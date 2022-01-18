@@ -11,7 +11,7 @@ feh --bg-fill --no-fehbg $BG_FILE
 betterlockscreen -u $BG_FILE --fx blur
 
 # set betterlockscreen as locker
-killall -q xss-lock 
+killall xss-lock 
 while pgrep -u $UID -x xss-lock >/dev/null; do sleep 1; done
 xss-lock -- betterlockscreen -l blur &
 
