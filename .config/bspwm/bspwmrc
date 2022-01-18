@@ -24,5 +24,6 @@ sh ~/.config/picom/launch.sh &
 sh ~/.config/polybar/launch.sh &
 sh ~/.config/mopidy/launch.sh &
 sh ~/scripts/bg-lock.sh &
-fcitx -d &
+fcitx5 -d -r &
+batsignal -W "low battery" -C "critically low battery" -D "dangerously low battery" -I battery -b
 
