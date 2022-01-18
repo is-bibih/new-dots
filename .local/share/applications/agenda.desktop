@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=agenda
-Exec=xournalpp /home/vivi/grive/inv21/agenda/agenda.xopp
+Exec=xournalpp /home/vivi/grive/inv21/agenda/agenda2.xopp
 Icon=planner
 Terminal=false
 X-Desktop-File-Install-Version=0.26
