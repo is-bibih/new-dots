@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# get playerctl status
+player_status=$(playerctl -a status 2> /dev/null)
+
+# amount of characters to keep (max length of song info)
+max_char=40
+
+# icons (with actions on left click) for prev/next/etc
+prev_icon="%{A1:playerctl previous:}玲%{A}"
+next_icon="%{A1:playerctl next:}怜%{A}"
+play_icon="%{A1:playerctl play:}契%{A}"
+paus_icon="%{A1:playerctl pause:}%{A}"
+stop_icon="%{A1:playerctl stop:}栗%{A}"
+
+# if playing
+if [[ $(echo "$player_status" | grep 'Playing') ]]; then
+  song_text="$(playerctl metadata artist) ~ $(playerctl metadata title)"
+  full_text="%{A1:playerctl pause:}${song_text::$max_char}%{A} $prev_icon$stop_icon$pause_icon$next_icon"
+# if paused
+elif [[ $(echo "$player_status" | grep 'Paused') ]]; then
+  song_text="$(playerctl metadata artist) ~ $(playerctl metadata title)"
+  full_text="%{A1:playerctl play:}${song_text::$max_char}%{A} $prev_icon$stop_icon$play_icon$next_icon"
+# if stopped/inactive
+else
+  full_text=""
+fi
+
+echo $full_text
