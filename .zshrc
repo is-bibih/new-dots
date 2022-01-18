@@ -72,7 +72,6 @@ export PATH=/home/vivi/.cargo/bin:$PATH
 
 # matlab to path
 export PATH=/home/vivi/MATLAB-install/R2021b/bin:$PATH
-export _JAVA_AWT_WM_NONREPARENTING=1
 
 # set pyenv root
 export PYENV_ROOT="$HOME/.pyenv"
