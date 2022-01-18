@@ -2,10 +2,11 @@ acpi
 acpilight
 alsa-firmware
 alsa-utils
-anki-official-binary-bundle
+anki-bin
 autoconf
 automake
 base
+batsignal
 betterlockscreen
 bison
 bluez-utils
@@ -15,8 +16,12 @@ dhcpcd
 dragon-drag-and-drop
 efibootmgr
 fakeroot
-fcitx-mozc
-fcitx-qt5
+fcitx5
+fcitx5-configtool
+fcitx5-gtk
+fcitx5-material-color
+fcitx5-mozc
+fcitx5-qt
 feh
 flex
 gcc
@@ -43,6 +48,7 @@ make
 man-db
 man-pages
 matlab-support
+mimeo
 mopidy
 mopidy-local
 mopidy-mpd
@@ -53,6 +59,7 @@ mpv
 ncspot-bin
 nnn-nerd
 noto-fonts
+noto-fonts-cjk
 npm
 openssh
 pamixer
@@ -61,6 +68,8 @@ papirus-icon-theme
 papirus-libreoffice-theme
 patch
 pavucontrol
+pdftk
+peaclock
 picom-git
 pkgconf
 playerctl
@@ -68,6 +77,8 @@ polybar
 pulseaudio
 pulseaudio-jack
 pyenv
+python-matplotlib
+python-scipy
 qt5-styleplugins
 redshift
 reflector
@@ -75,7 +86,7 @@ rofi
 sof-firmware
 stig
 sudo
-telegram-desktop-bin
+telegram-desktop-userfonts-bin
 texinfo
 texlive-bibtexextra
 texlive-core
@@ -91,9 +102,11 @@ texlive-publishers
 texlive-science
 thermald
 todotxt-git
+tpacpi-bat
 transmission-cli
 trash-cli
 ttf-mplus
+ttf-unifont
 unzip
 urxvt-perls
 urxvt-tabbedex
@@ -155,4 +168,5 @@ xournalpp
 xss-lock
 yay
 zathura
+zoom
 zsh
