@@ -49,6 +49,7 @@ set breakindent
 
 " colors
 syntax enable
+set background=dark
 " fix artifacts?
 set t_u7=
 " fix statusline artifacts
@@ -70,6 +71,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'honza/vim-snippets'
 Plug 'freitass/todo.txt-vim'
+" Plug 'habamax/vim-habamax'
 
 call plug#end()
 

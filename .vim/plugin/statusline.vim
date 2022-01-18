@@ -26,7 +26,6 @@ function! FancyMode()
 endfunction
 
 hi User1 ctermfg=black ctermbg=red
-"hi User1 ctermfg=black ctermbg=red cterm=bold
 hi User2 ctermfg=black ctermbg=yellow
 hi User3 ctermfg=black ctermbg=green
 hi User4 ctermfg=black ctermbg=cyan
