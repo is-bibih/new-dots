@@ -1,14 +1,14 @@
 GIMP Palette
-Name: pastel
+Name: Xournal Default Palette
 #
-255 127 246 Pink
-255 127 140 Light Red
-255 195 127 Orange
-255 233 127 Yellow
-127 255 140 Green
-127 199 255 Light Blue
-153 127 255 Purple
+255 127 246 Light pink
+255 127 140 Light red 
+255 195 127 Light orange 
+255 233 127 Light yellow
+127 255 140 Light green 
+127 199 255 Light blue
+153 127 255 Light purple 
 255 0 0 Red
 51 51 204 Blue
 0 0 0 Black
-
+255 255 255 White
