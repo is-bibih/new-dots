@@ -165,7 +165,7 @@ xorg-xwayland
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
-xournalpp
+xournalpp-git
 xss-lock
 yay
 zathura
