@@ -26,4 +26,5 @@ sh ~/.config/mopidy/launch.sh &
 sh ~/scripts/bg-lock.sh &
 fcitx5 -d -r &
 batsignal -W "low battery" -C "critically low battery" -D "dangerously low battery" -I battery -b
+playerctld daemon
 
