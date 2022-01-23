@@ -49,6 +49,7 @@ man-db
 man-pages
 matlab-support
 mimeo
+minecraft-launcher
 mopidy
 mopidy-local
 mopidy-mpd
@@ -168,5 +169,7 @@ xournalpp
 xss-lock
 yay
 zathura
+zip
 zoom
+zscroll-git
 zsh
