@@ -1,0 +1,7 @@
+evdev:input:b0005v0461p4DFC*   # evil belkin bluetooth keyboard (model F5L114)
+ KEYBOARD_KEY_700e7=rightalt   # right meta to right alt
+ KEYBOARD_KEY_70039=esc        # caps lock to esc
+ KEYBOARD_KEY_c0030=capslock   # power key to caps lock
+ KEYBOARD_KEY_700e2=leftmeta   # left meta to left alt (and vice versa)
+ KEYBOARD_KEY_700e3=leftalt
+
