@@ -41,14 +41,18 @@ XF86MonBrightnessUp
 	xbacklight -inc 5
 
 # mpris and mpd
-XF86Tools
+{XF86Tools,XF86AudioPlay}
 	playerctl play-pause
-XF86Search
+{XF86Search,XF86AudioPrev}
 	playerctl previous 
-XF86LaunchA
+{XF86LaunchA,XF86AudioNext}
 	playerctl next
 XF86Explorer
 	playerctl stop
+
+# enable trackpad while typing (minecraft)
+super + shift + m
+	xinput set-prop 14 "libinput Disable While Typing Enabled" 0
 
 #
 # bspwm hotkeys
