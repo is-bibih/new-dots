@@ -3,12 +3,14 @@
 <settings>
   <property name="pressureSensitivity" value="true"/>
   <property name="minimumPressure" value="0.35000000"/>
-  <property name="pressureMultiplier" value="2.00000000"/>
+  <property name="pressureMultiplier" value="2.16000000"/>
   <property name="zoomGesturesEnabled" value="true"/>
   <property name="selectedToolbar" value="notes custom"/>
   <property name="lastSavePath" value="/home/vivi/grive/inv21/agenda"/>
-  <property name="lastOpenPath" value="/home/vivi/grive/inv21/jp"/>
+  <property name="lastOpenPath" value="/home/vivi/grive/vivi/stonks"/>
   <property name="lastImagePath" value=""/>
+  <property name="edgePanSpeed" value="20.00000000"/>
+  <property name="edgePanMaxMult" value="5.00000000"/>
   <property name="zoomStep" value="10.00000000"/>
   <property name="zoomStepScroll" value="7.00000000"/>
   <property name="displayDpi" value="72"/>
@@ -34,7 +36,7 @@
   <property name="fullscreenHideElements" value="mainMenubar"/>
   <!--Which gui elements are hidden if you are in Presentation mode, separated by a colon (,)-->
   <property name="presentationHideElements" value="mainMenubar,sidebarContents"/>
-  <!--The cursor icon used with a stylus, allowed values are "none", "dot", "big"-->
+  <!--The cursor icon used with a stylus, allowed values are "none", "dot", "big", "arrow"-->
   <property name="stylusCursorType" value="dot"/>
   <property name="highlightPosition" value="true"/>
   <property name="cursorHighlightColor" value="2164260608"/>
@@ -63,6 +65,7 @@
   <property name="snapGridTolerance" value="0.50000000"/>
   <property name="snapGridSize" value="14.17000000"/>
   <property name="touchDrawing" value="false"/>
+  <property name="gtkTouchInertialScrolling" value="true"/>
   <property name="pressureGuessing" value="false"/>
   <property name="selectionBorderColor" value="4294901760"/>
   <property name="backgroundColor" value="4292664021"/>
@@ -83,7 +86,7 @@
   <property name="audioSampleRate" value="44100.00000000"/>
   <property name="audioGain" value="1.00000000"/>
   <property name="defaultSeekTime" value="5"/>
-  <property name="pluginEnabled" value=""/>
+  <property name="pluginEnabled" value="CustomKeybindings"/>
   <property name="pluginDisabled" value=""/>
   <property name="strokeFilterIgnoreTime" value="150"/>
   <property name="strokeFilterIgnoreLength" value="1.00000000"/>
@@ -134,10 +137,7 @@
       <attribute name="tool" type="string" value="eraser"/>
     </data>
     <data name="stylus2">
-      <attribute name="color" type="hex" value="ff000000"/>
-      <attribute name="drawingType" type="string" value="default"/>
-      <attribute name="size" type="string" value="none"/>
-      <attribute name="tool" type="string" value="highlighter"/>
+      <attribute name="tool" type="string" value="selectRect"/>
     </data>
     <data name="touch">
       <attribute name="device" type="string" value=""/>
@@ -167,6 +167,18 @@
       <attribute name="deviceSource" type="int" value="1"/>
     </data>
   </data>
+  <data name="lastUsedPageBgColor">
+    <attribute name="color00" type="hex" value="fff8ead3"/>
+    <attribute name="color01" type="hex" value="fffabebe"/>
+    <attribute name="color02" type="hex" value="fffafaf9"/>
+    <attribute name="color03" type="hex" value="ff232323"/>
+    <attribute name="color04" type="hex" value="ffffffff"/>
+    <attribute name="color05" type="hex" value="ffffffff"/>
+    <attribute name="color06" type="hex" value="ffffffff"/>
+    <attribute name="color07" type="hex" value="ffffffff"/>
+    <attribute name="color08" type="hex" value="ffffffff"/>
+    <attribute name="count" type="int" value="9"/>
+  </data>
   <data name="tools">
     <attribute name="current" type="string" value="pen"/>
     <data name="drawArrow">
@@ -193,7 +205,7 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="highlighter">
-      <attribute name="color" type="hex" value="7fc7ff"/>
+      <attribute name="color" type="hex" value="ff7f8c"/>
       <attribute name="drawingType" type="string" value="rectangle"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>
@@ -204,7 +216,7 @@
     </data>
     <data name="pen">
       <attribute name="color" type="hex" value="3333cc"/>
-      <attribute name="drawingType" type="string" value="default"/>
+      <attribute name="drawingType" type="string" value="strokeRecognizer"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>
       <attribute name="size" type="string" value="THIN"/>
@@ -226,7 +238,7 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="text">
-      <attribute name="color" type="hex" value="3333cc"/>
+      <attribute name="color" type="hex" value="000000"/>
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="verticalSpace">
