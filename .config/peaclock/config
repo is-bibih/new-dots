@@ -1,0 +1,4 @@
+mode stopwatch
+set seconds on
+set date off
+

@@ -71,7 +71,12 @@ export PATH=/home/vivi/.local/bin:$PATH
 export PATH=/home/vivi/.cargo/bin:$PATH
 
 # matlab to path
-export PATH=/home/vivi/MATLAB-install/R2021b/bin:$PATH
+export PATH=/home/vivi/MATLAB/R2021b/bin:$PATH
+# cli matlab
+alias matcli="matlab -nodesktop -nosplash"
+
+# peaclock with decent config location
+alias peaclock="peaclock --config-dir ~/.config/peaclock"
 
 # set pyenv root
 export PYENV_ROOT="$HOME/.pyenv"
