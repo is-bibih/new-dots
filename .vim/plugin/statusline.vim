@@ -8,7 +8,7 @@ endfunction
 
 function! StatuslineGit()
   let l:branchname = GitBranch()
-  return strlen(l:branchname) > 0?'  '.l:branchname.' ':''
+  return strlen(l:branchname) > 0?''.l:branchname.' ':''
 endfunction
 
 function! FancyMode()
@@ -35,7 +35,7 @@ set statusline+=%1*\ %1*
 set statusline+=%{FancyMode()}
 set statusline+=\ %2*\ 
 set statusline+=%{StatuslineGit()}
-set statusline+=\ ♥\ %f
+set statusline+=♥\ %f
 set statusline+=%m
 set statusline+=%=
 set statusline+=%3*
