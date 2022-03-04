@@ -70,11 +70,11 @@ Plug 'lervag/vimtex'
 Plug 'sheerun/vim-polyglot'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'honza/vim-snippets'
-Plug 'freitass/todo.txt-vim'
+Plug 'vim-scripts/todo-txt.vim'
 " Plug 'habamax/vim-habamax'
 
 call plug#end()
 
 " install coc extensions
-let g:coc_global_extensions = ['coc-marketplace', 'coc-pyright', 'coc-rome', 'coc-vimtex', 'coc-texlab', 'coc-snippets', 'coc-clangd']
+let g:coc_global_extensions = ['coc-json', 'coc-marketplace', 'coc-pyright', 'coc-rome', 'coc-vimtex', 'coc-texlab', 'coc-snippets', 'coc-clangd']
 

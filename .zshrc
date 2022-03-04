@@ -60,7 +60,8 @@ alias latexclean='rm -r ./*.nav ./*.snm ./*.synctex.gz ./*_minted*'
 export TEXINPUTS=:$HOME/.latex-packages//
 
 # todo.txt alias
-alias todo='todo.sh -c'
+alias t='todo.sh -t'
+alias vt='vim ~/grive/todo/todo.txt'
 
 # load nnn config
 . ~/.config/nnn/config.sh
