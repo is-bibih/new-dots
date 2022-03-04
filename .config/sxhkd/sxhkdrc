@@ -30,9 +30,9 @@ shift Print
 XF86AudioMute
 	pamixer --toggle-mute
 XF86AudioLowerVolume
-	pamixer --decrease 5
+	pamixer --unmute --decrease 5
 XF86AudioRaiseVolume
-	pamixer --increase 5
+	pamixer --unmute --increase 5
 
 # screen brightness
 XF86MonBrightnessDown

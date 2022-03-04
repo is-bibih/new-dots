@@ -22,9 +22,7 @@ sh ~/scripts/no-rounded-monocle.sh &
 # no beep
 xset -b &
 # switch caps lock and esc
-setxkbmap -option caps:swapescape
-# for the bluetooth keyboard
-#setxkbmap -option altwin:swap_alt_win
+setxkbmap -device 13 -option caps:swapescape
 
 # -- autostart --
 
