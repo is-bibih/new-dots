@@ -72,9 +72,10 @@ export PATH=/home/vivi/.local/bin:$PATH
 export PATH=/home/vivi/.cargo/bin:$PATH
 
 # matlab to path
-export PATH=/home/vivi/MATLAB/R2021b/bin:$PATH
+export PATH=/home/vivi/MATLAB/R2022a/bin:$PATH
+export LD_PRELOAD=/lib64/libfreetype.so
 # cli matlab
-alias matcli="matlab -nodesktop -nosplash"
+alias matcli="matlab -nodesktop -nosplash -softwareopengl"
 
 # peaclock with decent config location
 alias peaclock="peaclock --config-dir ~/.config/peaclock"
