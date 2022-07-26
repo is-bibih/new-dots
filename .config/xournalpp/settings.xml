@@ -6,20 +6,20 @@
   <property name="pressureMultiplier" value="2.16000000"/>
   <property name="zoomGesturesEnabled" value="true"/>
   <property name="selectedToolbar" value="notes custom"/>
-  <property name="lastSavePath" value="/home/vivi/grive/inv21/agenda"/>
-  <property name="lastOpenPath" value="/home/vivi/grive/vivi/stonks"/>
+  <property name="lastSavePath" value="/home/vivi/grive/ifi6/agenda"/>
+  <property name="lastOpenPath" value="/home/vivi/grive/ifi6/1-electronica"/>
   <property name="lastImagePath" value=""/>
   <property name="edgePanSpeed" value="20.00000000"/>
   <property name="edgePanMaxMult" value="5.00000000"/>
-  <property name="zoomStep" value="10.00000000"/>
-  <property name="zoomStepScroll" value="7.00000000"/>
+  <property name="zoomStep" value="6.00000000"/>
+  <property name="zoomStepScroll" value="5.00000000"/>
   <property name="displayDpi" value="72"/>
   <property name="mainWndWidth" value="1346"/>
   <property name="mainWndHeight" value="724"/>
   <property name="maximized" value="false"/>
   <property name="showToolbar" value="true"/>
-  <property name="showSidebar" value="false"/>
-  <property name="sidebarWidth" value="50"/>
+  <property name="showSidebar" value="true"/>
+  <property name="sidebarWidth" value="128"/>
   <property name="sidebarOnRight" value="false"/>
   <property name="scrollbarOnLeft" value="false"/>
   <property name="menubarVisible" value="true"/>
@@ -96,11 +96,11 @@
   <property name="trySelectOnStrokeFiltered" value="false"/>
   <property name="snapRecognizedShapesEnabled" value="false"/>
   <property name="restoreLineWidthEnabled" value="false"/>
-  <property name="numIgnoredStylusEvents" value="0"/>
-  <property name="inputSystemTPCButton" value="false"/>
-  <property name="inputSystemDrawOutsideWindow" value="true"/>
+  <property name="numIgnoredStylusEvents" value="3"/>
+  <property name="inputSystemTPCButton" value="true"/>
+  <property name="inputSystemDrawOutsideWindow" value="false"/>
   <property name="preferredLocale" value=""/>
-  <property name="stabilizerAveragingMethod" value="0"/>
+  <property name="stabilizerAveragingMethod" value="2"/>
   <property name="stabilizerPreprocessor" value="0"/>
   <property name="stabilizerBuffersize" value="20"/>
   <property name="stabilizerSigma" value="0.50000000"/>
@@ -115,9 +115,9 @@
   <property name="font" font="Chihaya Jyun" size="12.00000000"/>
   <data name="buttonConfig">
     <data name="default">
-      <attribute name="color" type="hex" value="ff000000"/>
+      <attribute name="color" type="hex" value="ff3f44bf"/>
       <attribute name="drawingType" type="string" value="default"/>
-      <attribute name="size" type="string" value="thin"/>
+      <attribute name="size" type="string" value="medium"/>
       <attribute name="tool" type="string" value="pen"/>
     </data>
     <data name="eraser">
@@ -132,12 +132,10 @@
       <attribute name="tool" type="string" value="none"/>
     </data>
     <data name="stylus">
-      <attribute name="eraserMode" type="string" value="none"/>
-      <attribute name="size" type="string" value="none"/>
-      <attribute name="tool" type="string" value="eraser"/>
+      <attribute name="tool" type="string" value="hand"/>
     </data>
     <data name="stylus2">
-      <attribute name="tool" type="string" value="selectRect"/>
+      <attribute name="tool" type="string" value="showFloatingToolbox"/>
     </data>
     <data name="touch">
       <attribute name="device" type="string" value=""/>
@@ -162,7 +160,15 @@
       <attribute name="deviceClass" type="int" value="0"/>
       <attribute name="deviceSource" type="int" value="8"/>
     </data>
+    <data name="Wacom Intuos PT S 2 Pad pad">
+      <attribute name="deviceClass" type="int" value="0"/>
+      <attribute name="deviceSource" type="int" value="8"/>
+    </data>
     <data name="Wacom Intuos PT S 2 Pen Pen (0x5a816253)">
+      <attribute name="deviceClass" type="int" value="2"/>
+      <attribute name="deviceSource" type="int" value="1"/>
+    </data>
+    <data name="Wacom Intuos PT S 2 Pen stylus">
       <attribute name="deviceClass" type="int" value="2"/>
       <attribute name="deviceSource" type="int" value="1"/>
     </data>
@@ -205,8 +211,8 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="highlighter">
-      <attribute name="color" type="hex" value="ff7f8c"/>
-      <attribute name="drawingType" type="string" value="rectangle"/>
+      <attribute name="color" type="hex" value="ffe97f"/>
+      <attribute name="drawingType" type="string" value="strokeRecognizer"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>
       <attribute name="size" type="string" value="MEDIUM"/>
@@ -226,6 +232,14 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="selectObject">
+      <attribute name="drawingType" type="string" value="default"/>
+    </data>
+    <data name="selectPdfTextLinear">
+      <attribute name="color" type="hex" value="000000"/>
+      <attribute name="drawingType" type="string" value="default"/>
+    </data>
+    <data name="selectPdfTextRect">
+      <attribute name="color" type="hex" value="000000"/>
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="selectRect">
