@@ -11,8 +11,8 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc rule -a "MATLAB R2021b - academic use" state=floating
-bspc rule -a zoom state=floating
+bspc rule -a "MATLAB R2022a - academic use" state=floating
+bspc rule -a "zoom " state=floating
 bspc rule -a Zathura state=tiled
 
 # -- other stuff --
@@ -22,7 +22,7 @@ sh ~/scripts/no-rounded-monocle.sh &
 # no beep
 xset -b &
 # switch caps lock and esc
-setxkbmap -device 13 -option caps:swapescape
+setxkbmap -option caps:swapescape
 
 # -- autostart --
 
