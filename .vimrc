@@ -71,7 +71,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'honza/vim-snippets'
 Plug 'vim-scripts/todo-txt.vim'
-" Plug 'habamax/vim-habamax'
+Plug 'luizribeiro/vim-cooklang', { 'for': 'cook' }
 
 call plug#end()
 
