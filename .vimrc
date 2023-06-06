@@ -72,6 +72,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'honza/vim-snippets'
 Plug 'vim-scripts/todo-txt.vim'
 Plug 'luizribeiro/vim-cooklang', { 'for': 'cook' }
+Plug 'jasonccox/vim-wayland-clipboard'
 
 call plug#end()
 

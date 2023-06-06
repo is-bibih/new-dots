@@ -6,23 +6,24 @@
   <property name="pressureMultiplier" value="2.16000000"/>
   <property name="zoomGesturesEnabled" value="true"/>
   <property name="selectedToolbar" value="notes custom"/>
-  <property name="lastSavePath" value="/home/vivi/grive/ifi6/agenda"/>
-  <property name="lastOpenPath" value="/home/vivi/grive/ifi6/1-electronica"/>
+  <property name="lastSavePath" value="/home/vivi/grive/postech/misc"/>
+  <property name="lastOpenPath" value="/home/vivi/grive/postech/misc"/>
   <property name="lastImagePath" value=""/>
   <property name="edgePanSpeed" value="20.00000000"/>
   <property name="edgePanMaxMult" value="5.00000000"/>
   <property name="zoomStep" value="6.00000000"/>
   <property name="zoomStepScroll" value="5.00000000"/>
   <property name="displayDpi" value="72"/>
-  <property name="mainWndWidth" value="1346"/>
-  <property name="mainWndHeight" value="724"/>
+  <property name="mainWndWidth" value="1354"/>
+  <property name="mainWndHeight" value="732"/>
   <property name="maximized" value="false"/>
   <property name="showToolbar" value="true"/>
-  <property name="showSidebar" value="true"/>
-  <property name="sidebarWidth" value="128"/>
+  <property name="showSidebar" value="false"/>
+  <property name="sidebarWidth" value="50"/>
   <property name="sidebarOnRight" value="false"/>
   <property name="scrollbarOnLeft" value="false"/>
   <property name="menubarVisible" value="true"/>
+  <property name="filepathShownInTitlebar" value="false"/>
   <property name="numColumns" value="1"/>
   <property name="numRows" value="1"/>
   <property name="viewFixedRows" value="false"/>
@@ -38,6 +39,8 @@
   <property name="presentationHideElements" value="mainMenubar,sidebarContents"/>
   <!--The cursor icon used with a stylus, allowed values are "none", "dot", "big", "arrow"-->
   <property name="stylusCursorType" value="dot"/>
+  <!--The icon theme, allowed values are "iconsColor", "iconsLucide"-->
+  <property name="iconTheme" value="iconsColor"/>
   <property name="highlightPosition" value="true"/>
   <property name="cursorHighlightColor" value="2164260608"/>
   <property name="cursorHighlightBorderColor" value="2147483903"/>
@@ -78,7 +81,7 @@
   <property name="preloadPagesAfter" value="5"/>
   <property name="eagerPageCleanup" value="true"/>
   <!--Config for new pages-->
-  <property name="pageTemplate" value="xoj/template&#10;copyLastPageSize=false&#10;copyLastPageSettings=true&#10;size=611.999983x791.999983&#10;backgroundType=graph&#10;backgroundColor=#ffffffff&#10;"/>
+  <property name="pageTemplate" value="xoj/template&#10;copyLastPageSize=false&#10;copyLastPageSettings=true&#10;size=611.999983x791.999983&#10;backgroundType=dotted&#10;backgroundColor=#ffffffff&#10;"/>
   <property name="sizeUnit" value="cm"/>
   <property name="audioFolder" value=""/>
   <property name="audioInputDevice" value="-1"/>
@@ -86,7 +89,7 @@
   <property name="audioSampleRate" value="44100.00000000"/>
   <property name="audioGain" value="1.00000000"/>
   <property name="defaultSeekTime" value="5"/>
-  <property name="pluginEnabled" value="CustomKeybindings"/>
+  <property name="pluginEnabled" value="/home/vivi/.config/xournalpp/plugins/CustomKeybindings"/>
   <property name="pluginDisabled" value=""/>
   <property name="strokeFilterIgnoreTime" value="150"/>
   <property name="strokeFilterIgnoreLength" value="1.00000000"/>
@@ -103,7 +106,7 @@
   <property name="stabilizerAveragingMethod" value="2"/>
   <property name="stabilizerPreprocessor" value="0"/>
   <property name="stabilizerBuffersize" value="20"/>
-  <property name="stabilizerSigma" value="0.50000000"/>
+  <property name="stabilizerSigma" value="0.70000000"/>
   <property name="stabilizerDeadzoneRadius" value="1.30000000"/>
   <property name="stabilizerDrag" value="0.40000000"/>
   <property name="stabilizerMass" value="5.00000000"/>
@@ -112,7 +115,14 @@
   <property name="latexSettings.autoCheckDependencies" value="true"/>
   <property name="latexSettings.globalTemplatePath" value="/usr/share/xournalpp/resources/default_template.tex"/>
   <property name="latexSettings.genCmd" value="pdflatex -halt-on-error -interaction=nonstopmode '{}'"/>
-  <property name="font" font="Chihaya Jyun" size="12.00000000"/>
+  <property name="latexSettings.sourceViewThemeId" value=""/>
+  <property name="latexSettings.editorFont" value="Monospace 12"/>
+  <property name="latexSettings.useCustomEditorFont" value="false"/>
+  <property name="latexSettings.editorWordWrap" value="true"/>
+  <property name="latexSettings.sourceViewAutoIndent" value="true"/>
+  <property name="latexSettings.sourceViewSyntaxHighlight" value="true"/>
+  <property name="latexSettings.sourceViewShowLineNumbers" value="false"/>
+  <property name="font" font="Bahnschrift" size="12.00000000"/>
   <data name="buttonConfig">
     <data name="default">
       <attribute name="color" type="hex" value="ff3f44bf"/>
@@ -193,6 +203,9 @@
     <data name="drawCoordinateSystem">
       <attribute name="drawingType" type="string" value="default"/>
     </data>
+    <data name="drawDoubleArrow">
+      <attribute name="drawingType" type="string" value="default"/>
+    </data>
     <data name="drawEllipse">
       <attribute name="drawingType" type="string" value="default"/>
     </data>
@@ -203,7 +216,7 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="eraser">
-      <attribute name="drawingType" type="string" value="default"/>
+      <attribute name="drawingType" type="string" value="strokeRecognizer"/>
       <attribute name="size" type="string" value="THIN"/>
       <attribute name="type" type="string" value="deleteStroke"/>
     </data>
@@ -211,9 +224,9 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="highlighter">
-      <attribute name="color" type="hex" value="ffe97f"/>
-      <attribute name="drawingType" type="string" value="strokeRecognizer"/>
-      <attribute name="fill" type="int" value="0"/>
+      <attribute name="color" type="hex" value="ffc37f"/>
+      <attribute name="drawingType" type="string" value="rectangle"/>
+      <attribute name="fill" type="int" value="1"/>
       <attribute name="fillAlpha" type="int" value="128"/>
       <attribute name="size" type="string" value="MEDIUM"/>
     </data>
@@ -221,8 +234,8 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="pen">
-      <attribute name="color" type="hex" value="3333cc"/>
-      <attribute name="drawingType" type="string" value="strokeRecognizer"/>
+      <attribute name="color" type="hex" value="ffffff"/>
+      <attribute name="drawingType" type="string" value="default"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>
       <attribute name="size" type="string" value="THIN"/>

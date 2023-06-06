@@ -21,7 +21,7 @@ bindkey -v
 # End of lines configured by zsh-newuser-install
 
 # set prompt
-prompt='%F{#ffa1ca}%n%F{#ffe9aa} ♥ %F{#b1a1ff}%2~ %F{#ffe9aa}%#%f '
+prompt='%F{#ffa1ca}%n%F{#ffe9aa} ♥  %F{#b1a1ff}%2~ %F{#ffe9aa}%#%f '
 # git status on right
 autoload -Uz vcs_info
 precmd_vcs_info() { vcs_info }
@@ -31,18 +31,18 @@ RPROMPT=\$vcs_info_msg_0_
 zstyle ':vcs_info:git:*' formats '%F{#b1a1ff}%b  %r%f'
 zstyle ':vcs_info:*' enable git
 
-# vim instead of vi
-alias vi='vim'
+# nvim instead of vi
+alias vi='nvim'
 # vim as editor
-export VISUAL=vim
+export VISUAL=nvim
 export EDITOR="$VISUAL"
 
 # vim as sudo text editor
 alias suvim='SUDO_EDITOR=vim sudoedit'
 
 # default terminal
-export TERMINAL='urxvt'
-alias xterm='urxvt'
+export TERMINAL='alacritty'
+alias xterm='alacritty'
 
 # colored outputs 
 alias ls='ls --color=auto'
@@ -57,11 +57,12 @@ alias dots='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
 # remove latex compilation files
 alias latexclean='rm -r ./*.nav ./*.snm ./*.synctex.gz ./*_minted*'
 # add folder for custom classes/packages
-export TEXINPUTS=:$HOME/.latex-packages//
+export TEXINPUTS=:$HOME/gits/latex-templates//
 
 # todo.txt alias
-alias t='todo.sh -t'
-alias vt='vim ~/grive/todo/todo.txt'
+alias t='todo.sh -t -N -a -d .config/todo/todo.cfg'
+alias vt='nvim ~/grive/todo/todo.txt'
+alias vtf='nvim ~/grive/todo/future.todo.txt'
 
 # load nnn config
 . ~/.config/nnn/config.sh
@@ -77,37 +78,10 @@ export LD_PRELOAD=/lib64/libfreetype.so
 # cli matlab
 alias matcli="matlab -nodesktop -nosplash -softwareopengl"
 
-# peaclock with decent config location
-alias peaclock="peaclock --config-dir ~/.config/peaclock"
+## set pyenv root
+#export PYENV_ROOT="$HOME/.pyenv"
+## autoninit pyenv
+#eval "$(pyenv init -)"
+## make pipenv respect pyenv
+#export PIPENV_PYTHON=$PYENV_ROOT/shims/python
 
-# set pyenv root
-export PYENV_ROOT="$HOME/.pyenv"
-# autoninit pyenv
-eval "$(pyenv init -)"
-# make pipenv respect pyenv
-export PIPENV_PYTHON=$PYENV_ROOT/shims/python
-
-#------------------------------
-# Window title
-#------------------------------
-autoload -Uz vcs_info
-case $TERM in
-  termite|*xterm*|rxvt|rxvt-unicode|rxvt-256color|rxvt-unicode-256color|(dt|k|E)term)
-    precmd () {
-      vcs_info
-      print -Pn "\e]0;%n%~\a"
-    } 
-    preexec () { print -Pn "\e]0;%n%~ ($1)\a" }
-    ;;
-  screen|screen-256color)
-    precmd () { 
-      vcs_info
-      print -Pn "\e]83;title \"$1\"\a" 
-      print -Pn "\e]0;$TERM - (%L) %n%~\a" 
-    }
-    preexec () { 
-      print -Pn "\e]83;title \"$1\"\a" 
-      print -Pn "\e]0;$TERM - (%L) %n%~ ($1)\a" 
-    }
-    ;; 
-esac
