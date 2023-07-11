@@ -1,0 +1,9 @@
+width=500
+matching=fuzzy
+insensitive=true
+gtk_dark=true
+allow_images=true
+image_size=16
+hide_scroll=true
+key_expand=Right
+single_click=true

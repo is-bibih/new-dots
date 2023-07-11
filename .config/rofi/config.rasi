@@ -1,8 +1,0 @@
-configuration {
-	modi: "filebrowser,window,drun";
-	show-icons: true;
-	icon-theme: "Papirus-Dark";
-	font: "M+ 1mn 11";
-}
-
-@theme "cute-theme"
