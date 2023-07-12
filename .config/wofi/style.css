@@ -1,11 +1,10 @@
-/* Frappe Rosewater */
 @define-color accent #f2d5cf;
 @define-color txt #cad3f5;
 @define-color bg #303446;
 @define-color bg2 #51576d;
 
  * {
-    font-family: 'JetBrains Mono Nerd Font', monospace;
+    font-family: monospace;
     font-size: 12px;
  }
 
@@ -55,15 +54,16 @@
  }
 
  #entry {
-   border-radius: 7px;
+   border: none;
+   background-color: @bg;
  }
 
-/* /* Selected Entry */
+/* Selected Entry */
  #entry:selected {
    background-color: @accent;
  }
 
  #entry:selected #text {
     color: @bg;
-*/ }
+ } 
 
