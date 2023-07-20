@@ -21,14 +21,14 @@ set $menu wofi --show drun swaymsg exec --
 corner_radius 10
 
 # Window background blur
-blur off
+blur enable
 blur_xray off
 blur_passes 2
 blur_radius 5
 
-shadows off
+shadows enable
 shadows_on_csd off
-shadow_blur_radius 20
+shadow_blur_radius 10
 shadow_color #0000007F
 
 # inactive window fade amount. 0.0 = no dimming, 1.0 = fully dimmed
@@ -207,7 +207,7 @@ bar {
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %I:%M:%S %p'; do sleep 1; done
+    status_command while ~/.config/sway/statusline.sh; do sleep 1; done
 
     colors {
         statusline #ffffff
