@@ -7,3 +7,4 @@ image_size=16
 hide_scroll=true
 key_expand=Right
 single_click=true
+run-always_parse_args=true
