@@ -1,5 +1,4 @@
 width=500
-matching=fuzzy
 insensitive=true
 gtk_dark=true
 allow_images=true

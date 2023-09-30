@@ -19,7 +19,7 @@ set $dmenu wofi --show run
 ### autostart ###
 
 exec_always sh ~/.config/sway/autostart.sh
-exec create_ap --config ~/scripts/munich-internet.conf
+exec_always import-gsettings
 
 ### appearance ###
 
@@ -53,7 +53,7 @@ default_border none
 ### output configuration ###
 
 # wallpaper
-# output "*" bg $(find ~/grive/vivi/.wallpapers/ -type f | shuf -n 1) fill
+output "*" bg $(find ~/grive/vivi/.wallpapers/ -type f | shuf -n 1) fill
 
 ### input config ###
 
@@ -162,6 +162,9 @@ input * {
     # show the next scratchpad window or hide the focused scratchpad window.
     bindsym $mod+minus scratchpad show
 
+# floating windows
+for_window [class="Matplotlib"] floating enable
+
 # resizing containers:
 
 mode "resize" {
@@ -208,7 +211,7 @@ bindsym $mod+r mode "resize"
 
 # screenshots:
 
-    bindsym Print exec wl-copy < $(grimshot save area)
+    bindsym Print exec grimshot copy area
 
 # statusbar:
 
@@ -220,7 +223,7 @@ bar {
     colors {
         statusline #ffffff
         background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
+        inactive_workspace #323232ff #323232ff #5c5c5c
     }
 }
 
