@@ -85,3 +85,6 @@ alias matcli="matlab -nodesktop -nosplash -softwareopengl"
 ## make pipenv respect pyenv
 #export PIPENV_PYTHON=$PYENV_ROOT/shims/python
 
+# node version manager (with faster custom startup)
+. ~/scripts/nvm-lazy-load.sh
+
