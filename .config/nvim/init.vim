@@ -66,11 +66,12 @@ Plug 'honza/vim-snippets'
 Plug 'vim-scripts/todo-txt.vim'
 Plug 'luizribeiro/vim-cooklang', { 'for': 'cook' }
 Plug 'jasonccox/vim-wayland-clipboard'
+Plug 'dccsillag/magma-nvim', { 'do': ':UpdateRemotePlugins' }
 
 call plug#end()
 
 " install coc extensions
-let g:coc_global_extensions = ['coc-json', 'coc-marketplace', 'coc-pyright', 'coc-rome', 'coc-vimtex', 'coc-texlab', 'coc-snippets', 'coc-clangd']
+let g:coc_global_extensions = ['coc-json', 'coc-marketplace', 'coc-pyright', 'coc-vimtex', 'coc-texlab', 'coc-snippets', 'coc-clangd', 'coc-tsserver', 'coc-eslint', 'coc-prettier', 'coc-css']
 
 " --- autoload other config files ---
 
