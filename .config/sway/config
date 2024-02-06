@@ -23,6 +23,9 @@ exec_always import-gsettings
 
 ### appearance ###
 
+# cursor theme
+seat seat0 xcursor_theme Catppuccin-Mocha-Pink-Cursors
+
 # window corner radius in px
 corner_radius 10
 
