@@ -13,6 +13,7 @@ brightnessctl
 brother-dcpt310
 brscan-skey
 brscan4
+catppuccin-cursors-mocha
 catppuccin-gtk-theme-frappe
 chrpath
 clang
@@ -22,6 +23,7 @@ cups-pdf
 debtap
 discord
 docker
+docker-compose
 dosfstools
 dunst
 efibootmgr
@@ -33,6 +35,7 @@ fcitx5-gtk
 fcitx5-material-color
 fcitx5-mozc-ut
 fcitx5-qt
+file-roller
 foomatic-db-engine
 foomatic-db-gutenprint-ppds
 foomatic-db-nonfree-ppds
@@ -66,18 +69,24 @@ linux-wifi-hotspot
 ly
 man-db
 man-pages
+mattermost-desktop-bin
+mongodb-bin
+mongodb-tools-bin
 mongosh-bin
 mpv
 ncspot
 neovim
 neovim-coc-bin
 networkmanager
+nginx
 nnn
 noto-fonts-cjk
 npm
 ntfs-3g
 nvm
 nwg-displays
+oatmeal-bin
+obs-studio
 openssh
 os-prober
 otf-openmoji
@@ -96,7 +105,6 @@ pipewire-pulse
 playerctl
 python-kaleido-bin
 python-matplotlib
-python-numpy
 python-pandas
 python-pip
 python-pipx
@@ -111,7 +119,7 @@ reflector
 scdoc
 shotcut
 simple-scan
-slack-desktop
+steam
 stig
 subliminal
 subversion
@@ -145,6 +153,7 @@ texlive-pstricks
 texlive-publishers
 texlive-xetex
 thunar
+thunar-archive-plugin
 tk
 todotxt
 transmission-cli
@@ -154,6 +163,7 @@ udevil
 ueberzug
 unrar-free
 vim-plug
+waybar
 wev
 wl-clipboard
 wlroots0.16
