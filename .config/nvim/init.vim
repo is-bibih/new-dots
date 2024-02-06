@@ -67,6 +67,9 @@ Plug 'vim-scripts/todo-txt.vim'
 Plug 'luizribeiro/vim-cooklang', { 'for': 'cook' }
 Plug 'jasonccox/vim-wayland-clipboard'
 Plug 'dccsillag/magma-nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'sindrets/diffview.nvim'
+Plug 'gsuuon/model.nvim'
+Plug 'dustinblackman/oatmeal.nvim'
 
 call plug#end()
 
