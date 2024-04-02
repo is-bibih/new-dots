@@ -67,6 +67,10 @@ input type:touchpad {
     middle_emulation enabled
 }
 
+# drawing tablet
+input type:tablet_pad map_to_output eDP-1
+input type:tablet_tool map_to_output eDP-1
+
 # keyboard layout options
 input * {
     xkb_layout "es"
