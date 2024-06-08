@@ -33,6 +33,7 @@ zstyle ':vcs_info:*' enable git
 
 # nvim instead of vi
 alias vi='nvim'
+alias vim='nvim'
 # vim as editor
 export VISUAL=nvim
 export EDITOR="$VISUAL"
@@ -77,6 +78,9 @@ export PATH=/home/vivi/MATLAB/R2022a/bin:$PATH
 export LD_PRELOAD=/lib64/libfreetype.so
 # cli matlab
 alias matcli="matlab -nodesktop -nosplash -softwareopengl"
+
+# sensitive env variables
+export $(envsubst < .env)
 
 ## set pyenv root
 #export PYENV_ROOT="$HOME/.pyenv"
