@@ -1,0 +1,85 @@
+@import url("/home/vivi/.config/waybar/vars.css");
+
+* {
+  font-family: monospace;
+  font-size: 12px;
+  min-height: 0;
+  border-radius: 3px;
+  margin: 1px 0px;
+  padding: 0px;
+}
+
+.module {
+  color: @fg;
+  background-color: @moduleBg;
+  margin: 2px;
+  padding: 0px 4px;
+}
+
+.modules-left {
+  padding-left: 4px;
+}
+ 
+.modules-right {
+  padding-right: 2px;
+}
+
+window#waybar {
+  background: @bg;
+}
+
+#window {
+  font-weight: bold;
+  padding: 0px 8px;
+}
+
+#waybar.empty #window {
+  background-color: transparent;
+}
+
+#workspaces {
+  background-color: transparent;
+  padding: 0px;
+  margin: 2px 0px;
+}
+
+#workspaces button {
+  min-width: 20px;
+  margin: 0px 2px;
+}
+
+#workspaces button:hover {
+  background-color: @accentBg;
+}
+
+#workspaces button.focused {
+  background-color: @accent;
+  font-weight: bold;
+}
+
+#workspaces button.urgent {
+  color: white;
+  background-color: @urgent;
+}
+
+#battery.warning:not(.charging) {
+  background-color: @warning;
+}
+
+#battery.critical:not(.charging) {
+  background-color: @warning;
+}
+
+#network.disconnected {
+  background-color: @warning;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: @accent;
+}
+

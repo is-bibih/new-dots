@@ -1,0 +1,9 @@
+@define-color bg rgba(125, 125, 125, 0.1);
+@define-color fg white;
+@define-color moduleBg rgba(0, 0, 0, 0.2);
+@define-color accent rgb(255, 124, 241);
+@define-color accentBg rgba(255, 124, 241, 0.5);
+@define-color urgent rgb(252, 42, 95);
+@define-color warning orange;
+@define-color good rgba(42, 193, 252, 0.5);
+

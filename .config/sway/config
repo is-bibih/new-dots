@@ -34,6 +34,8 @@ blur enable
 blur_passes 3
 blur_radius 8
 
+layer_effects "waybar" blur enable
+
 shadows enable
 shadows_on_csd off
 shadow_blur_radius 10
@@ -223,15 +225,7 @@ bindsym $mod+r mode "resize"
 # statusbar:
 
 bar {
-    position top
-
-    status_command while ~/.config/sway/statusline.sh; do sleep 1; done
-
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #323232ff #323232ff #5c5c5c
-    }
+    swaybar_command waybar
 }
 
 # window decorations

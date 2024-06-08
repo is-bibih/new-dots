@@ -1,0 +1,101 @@
+{
+    "reload_style_on_change": true,
+    "position": "top",
+    "height": 24,
+    "spacing": 2,
+    "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["pulseaudio", "backlight", "network", "battery", "battery#2", "clock", "tray"],
+
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+
+    "sway/scratchpad": {
+        "format": "{count} {icon} ",
+        "show-empty": false,
+        "format-icons": ["", ""],
+        "tooltip": true,
+        "tooltip-format": "{app}: {title}",
+        "on-click": "exec swaymsg 'scratchpad show'",
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 2
+    },
+
+    "clock": {
+        "timezone": "America/Monterrey",
+        "format": "{:%I:%M %p} ",
+        "format-alt": "{:%a, %b %d %C%y} ",
+        "tooltip": true,
+        "on-click-right": "gsimplecal"
+    },
+
+    "backlight": {
+        "format": "{percent}% {icon}",
+        "format-icons": ["", ""]
+    },
+
+    "battery": {
+        "bat": "BAT0",
+        "tooltip": false,
+        "states": {
+            "good": 95,
+            "warning": 20,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "battery#2": {
+        "bat": "BAT1",
+        "tooltip": false,
+        "states": {
+            "good": 95,
+            "warning": 4,
+            "critical": 3
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "network": {
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ",
+        "on-click-right": "swaymsg exec 'alacritty --command nmtui'",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+
+    "pulseaudio": {
+        "tooltip": true,
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon} ",
+        "format-bluetooth-muted": " {icon} ",
+        "format-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click-right": "pavucontrol",
+        "on-click-middle": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+    },
+
+}
+
