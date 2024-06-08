@@ -6,12 +6,44 @@ set mouse=a
 set autoread
 set wildmenu
 set ttyfast
+let g:mapleader=","
+let g:leader=","
 
 " --- search ---
 
 set showmatch
 set hlsearch
 set incsearch
+
+" --- plugins ---
+
+" fetch plugins if not installed
+if empty(glob('~/.vim/autoload/plug.vim'))
+	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+				\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'lervag/vimtex'
+Plug 'sheerun/vim-polyglot'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'honza/vim-snippets'
+Plug 'vim-scripts/todo-txt.vim'
+Plug 'luizribeiro/vim-cooklang', { 'for': 'cook' }
+Plug 'jasonccox/vim-wayland-clipboard'
+Plug 'dccsillag/magma-nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'sindrets/diffview.nvim'
+Plug 'gsuuon/model.nvim'
+Plug 'junegunn/fzf.vim'
+Plug 'dustinblackman/oatmeal.nvim'
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+
+call plug#end()
+
+" install coc extensions
+let g:coc_global_extensions = ['coc-json', 'coc-marketplace', 'coc-pyright', 'coc-vimtex', 'coc-texlab', 'coc-snippets', 'coc-clangd', 'coc-tsserver', 'coc-eslint', 'coc-prettier', 'coc-css']
 
 " --- appearance ---
 
@@ -47,34 +79,7 @@ set breakindent
 " colors
 syntax enable
 set background=dark
-
-" --- plugins ---
-
-" fetch plugins if not installed
-if empty(glob('~/.vim/autoload/plug.vim'))
-	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-				\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-
-call plug#begin('~/.vim/plugged')
-
-Plug 'lervag/vimtex'
-Plug 'sheerun/vim-polyglot'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'honza/vim-snippets'
-Plug 'vim-scripts/todo-txt.vim'
-Plug 'luizribeiro/vim-cooklang', { 'for': 'cook' }
-Plug 'jasonccox/vim-wayland-clipboard'
-Plug 'dccsillag/magma-nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'sindrets/diffview.nvim'
-Plug 'gsuuon/model.nvim'
-Plug 'dustinblackman/oatmeal.nvim'
-
-call plug#end()
-
-" install coc extensions
-let g:coc_global_extensions = ['coc-json', 'coc-marketplace', 'coc-pyright', 'coc-vimtex', 'coc-texlab', 'coc-snippets', 'coc-clangd', 'coc-tsserver', 'coc-eslint', 'coc-prettier', 'coc-css']
+colorscheme catppuccin-mocha
 
 " --- autoload other config files ---
 
