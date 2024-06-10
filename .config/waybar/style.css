@@ -49,11 +49,11 @@ window#waybar {
 }
 
 #workspaces button:hover {
-  background-color: @accentBg;
+  background-color: @moduleBg;
 }
 
 #workspaces button.focused {
-  background-color: @accent;
+  background-color: @accentBg;
   font-weight: bold;
 }
 
