@@ -58,7 +58,7 @@ default_border none
 ### output configuration ###
 
 # wallpaper
-output "*" bg $(find ~/grive/vivi/.wallpapers/ -type f | shuf -n 1) fill
+output "*" bg $(find ~/odrive/vivi/.wallpapers/ -type f | shuf -n 1) fill
 
 ### input config ###
 
