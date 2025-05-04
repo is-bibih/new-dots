@@ -26,9 +26,8 @@
     },
 
     "clock": {
-        "timezone": "America/Monterrey",
         "format": "{:%I:%M %p} ",
-        "format-alt": "{:%a, %b %d %C%y} ",
+        "format-alt": "{:%a, %d-%m-%y} ",
         "tooltip": true,
         "on-click-right": "gsimplecal"
     },
