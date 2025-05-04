@@ -17,8 +17,14 @@ application/x-xoj=xournalpp.desktop
 text/csv=libreoffice-calc.desktop
 x-scheme-handler/webcal=brave-browser.desktop
 image/svg+xml=org.inkscape.Inkscape.desktop
+x-scheme-handler/postman=Postman.desktop
+x-scheme-handler/eclipse+command=_usr_lib_dbeaver_.desktop
+application/octet-stream=org.pwmt.zathura.desktop
+x-scheme-handler/tonsite=org.telegram.desktop.desktop
 
 [Added Associations]
 text/csv=libreoffice-calc.desktop;
 x-scheme-handler/tg=userapp-Telegram Desktop-5O59P1.desktop;userapp-Telegram Desktop-FICZW1.desktop;userapp-Telegram Desktop-JI8G41.desktop;org.telegram.desktop._f79d601e26a782fd149b3ffb098aae9f.desktop;userapp-Telegram Desktop-STT7B2.desktop;
 image/svg+xml=org.inkscape.Inkscape.desktop;
+application/octet-stream=org.pwmt.zathura.desktop;
+x-scheme-handler/tonsite=org.telegram.desktop.desktop;
