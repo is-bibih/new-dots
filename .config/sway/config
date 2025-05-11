@@ -58,7 +58,7 @@ default_border none
 ### output configuration ###
 
 # wallpaper
-output "*" bg $(find ~/odrive/vivi/.wallpapers/ -type f | shuf -n 1) fill
+# output "*" bg $(find ~/odrive/vivi/.wallpapers/ -type f | shuf -n 1) fill
 
 ### input config ###
 
@@ -67,6 +67,7 @@ input type:touchpad {
     tap enabled
     natural_scroll enabled
     middle_emulation enabled
+    pointer_accel 0.6
 }
 
 # drawing tablet
