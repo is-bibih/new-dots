@@ -10,5 +10,6 @@ export $(/usr/lib/systemd/user-environment-generators/30-systemd-environment-d-g
 fcitx5 -d --replace
 
 # gamma settings (color temperature)
-wlsunset -l $(curl --fail https://ipapi.co/latitude) -L $(curl --fail https://ipapi.co/longitude)
+#wlsunset -l $(curl --fail https://ipapi.co/latitude) -L $(curl --fail https://ipapi.co/longitude)
+wlsunset -S 6:00 -s 19:00
 
