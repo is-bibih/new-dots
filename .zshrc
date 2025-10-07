@@ -90,5 +90,5 @@ export $(envsubst < .env)
 #export PIPENV_PYTHON=$PYENV_ROOT/shims/python
 
 # node version manager (with faster custom startup)
-. ~/scripts/nvm-lazy-load.sh
+#. ~/scripts/nvm-lazy-load.sh
 
