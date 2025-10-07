@@ -58,7 +58,7 @@ default_border none
 ### output configuration ###
 
 # wallpaper
-# output "*" bg $(find ~/odrive/vivi/.wallpapers/ -type f | shuf -n 1) fill
+output "*" bg $(find ~/wallpapers/ -type f | shuf -n 1) fill
 
 ### input config ###
 
@@ -67,7 +67,7 @@ input type:touchpad {
     tap enabled
     natural_scroll enabled
     middle_emulation enabled
-    pointer_accel 0.6
+    pointer_accel 0.5
 }
 
 # drawing tablet
@@ -222,6 +222,7 @@ bindsym $mod+r mode "resize"
 # screenshots:
 
     bindsym Print exec grimshot copy area
+    bindsym $mod+Shift+s exec grimshot copy area
 
 # statusbar:
 
