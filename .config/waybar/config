@@ -3,9 +3,9 @@
     "position": "top",
     "height": 24,
     "spacing": 2,
-    "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad"],
+    "modules-left": ["custom/close", "sway/workspaces", "sway/mode", "sway/scratchpad"],
     "modules-center": ["sway/window"],
-    "modules-right": ["pulseaudio", "backlight", "network", "battery", "battery#2", "clock", "tray"],
+    "modules-right": ["custom/wvkbd","pulseaudio", "backlight", "network", "battery", "battery#2", "clock", "tray"],
 
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
@@ -96,5 +96,20 @@
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
     },
 
+    "custom/wvkbd": {
+        "format": "kbd {icon}",
+        "on-click": "/home/vivi/.config/waybar/scripts/run-wvkbd.sh",
+        "format-icons": {
+          "default": "󰌌"
+        }
+    },
+
+    "custom/close": {
+        "format": " {icon} ",
+        "on-click": "swaymsg kill",
+        "format-icons": {
+          "default": ""
+        }
+    },
 }
 
