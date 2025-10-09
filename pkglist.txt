@@ -84,6 +84,7 @@ npm
 ntfs-3g
 nvm
 nwg-displays
+nwg-look
 onedrive-abraunegg
 openssh
 openvpn
