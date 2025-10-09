@@ -1,6 +1,6 @@
 @define-color accent #f2d5cf;
 @define-color txt #cad3f5;
-@define-color bg #303446;
+@define-color bg rgba(48, 52, 70, 0.999);
 @define-color bg2 #51576d;
 
  * {
@@ -25,6 +25,7 @@
  /* Outer Box */
  #outer-box {
     margin: 5px;
+    margin-color: @bg;
     border: none;
     padding: 10px;
     background-color: @bg;
@@ -53,9 +54,14 @@
     color: @txt;
  }
 
+ #img{
+    padding-left: 10px;
+ }
+
  #entry {
    border: none;
    background-color: @bg;
+   border-radius: 5px;
  }
 
 /* Selected Entry */
