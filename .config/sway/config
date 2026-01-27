@@ -68,6 +68,7 @@ input type:touchpad {
     natural_scroll enabled
     middle_emulation enabled
     pointer_accel 0.5
+    scroll_factor 2.0
 }
 
 # drawing tablet
@@ -210,9 +211,9 @@ bindsym $mod+r mode "resize"
     bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
     # playerctl
-    bindsym XF86Tools exec playerctl play-pause
-    bindsym XF86Search exec playerctl previous
-    bindsym XF86LaunchA exec playerctl next
+    bindsym XF86NotificationCenter exec playerctl play-pause
+    bindsym XF86PickupPhone exec playerctl previous
+    bindsym XF86HangupPhone exec playerctl next
 
 # brightness:
 
@@ -221,8 +222,8 @@ bindsym $mod+r mode "resize"
 
 # screenshots:
 
-    bindsym Print exec grimshot copy area
-    bindsym $mod+Shift+s exec grimshot copy area
+    bindsym Print exec grim -g "$(slurp)" - | wl-copy
+    bindsym $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy
 
 # statusbar:
 
