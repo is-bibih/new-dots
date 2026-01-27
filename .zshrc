@@ -82,12 +82,12 @@ alias matcli="matlab -nodesktop -nosplash -softwareopengl"
 # sensitive env variables
 export $(envsubst < .env)
 
-## set pyenv root
-#export PYENV_ROOT="$HOME/.pyenv"
-## autoninit pyenv
-#eval "$(pyenv init -)"
-## make pipenv respect pyenv
-#export PIPENV_PYTHON=$PYENV_ROOT/shims/python
+# set pyenv root
+export PYENV_ROOT="$HOME/.pyenv"
+# autoninit pyenv
+eval "$(pyenv init -)"
+# make pipenv respect pyenv
+export PIPENV_PYTHON=$PYENV_ROOT/shims/python
 
 # node version manager (with faster custom startup)
 #. ~/scripts/nvm-lazy-load.sh
