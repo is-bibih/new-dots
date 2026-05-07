@@ -24,6 +24,7 @@ dosfstools
 dunst
 efibootmgr
 evemu
+evince-no-gnome
 evtest
 fcitx5
 fcitx5-configtool
@@ -98,7 +99,6 @@ papirus-folders-catppuccin-git
 papirus-icon-theme
 pass
 pavucontrol
-pcsx2-git
 pdftk
 pipewire
 pipewire-audio
@@ -106,10 +106,13 @@ pipewire-pulse
 playerctl
 playerctld-systemd-unit
 postgresql
+protonhax
 psutils
 pyenv
 pyside6
 python-astropy
+python-ipympl
+python-ipywidgets
 python-kaleido-bin
 python-langchain-community
 python-matplotlib
@@ -125,6 +128,8 @@ python-pyperclip
 python-pysubs2
 python-scipy
 python-setuptools
+python-uv
+python313
 qpdf-docs
 qt5-styleplugins
 qt5-webengine
@@ -135,6 +140,7 @@ ripgrep
 scdoc
 simple-scan
 sof-firmware
+steam
 stig-git
 subversion
 sudo
@@ -192,6 +198,8 @@ vopono-bin
 vulkan-intel
 waybar
 wev
+wine-staging
+winetricks
 wireguard-tools
 wlroots0.18
 wlsunset
